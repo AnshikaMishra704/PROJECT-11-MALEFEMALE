@@ -13,7 +13,7 @@ st.title("🧑 Male vs Female Image Classifier")
 
 @st.cache_resource
 def load_model():
-    model = tf.keras.models.load_model("binary_image_classifier_weights.weights.h5")
+    model.load_weights("binary_image_classifier_weights.weights.h5")
     return model
 
 model = load_model()
